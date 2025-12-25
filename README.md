@@ -1,8 +1,12 @@
 # 🌤️ Weather
 
+[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/zos-apps/weather/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-online-purple.svg)](https://zos-apps.github.io/weather)
+
 > Real-time weather forecasts
 
-Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
+**[Documentation](https://zos-apps.github.io/weather)** • **[App Store](https://zos-apps.github.io/app-store)** • **[All Apps](https://github.com/zos-apps)**
 
 ## Installation
 
@@ -10,37 +14,53 @@ Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
 npm install github:zos-apps/weather
 ```
 
+Or install via the [zOS App Store](https://zos-apps.github.io/app-store).
+
 ## Usage
 
 ```tsx
-import App from '@zos-apps/weather';
+import Weather from '@zos-apps/weather';
 
-function MyApp() {
-  return <App />;
+function App() {
+  return <Weather />;
 }
 ```
 
-## Package Spec
+## Features
 
-App metadata is defined in `package.json` under the `zos` field:
+- Native zOS window integration
+- Dark mode support
+- Keyboard shortcuts
+- Context menu actions
+- Menu bar integration
 
-```json
-{
-  "zos": {
-    "id": "ai.hanzo.weather",
-    "name": "Weather",
-    "icon": "🌤️",
-    "category": "utilities",
-    "permissions": ["network"],
-    "installable": true
-  }
-}
-```
+## Keyboard Shortcuts
 
-## Version
+No shortcuts defined.
 
-v4.2.0
+## Context Menu
+
+Right-click the app icon for:
+- **Open** - Launch the app
+- **Open in New Window** - Open a new instance
+- **Get Info** - View app details
+- **Show in Finder** - Locate app files
+
+## Menu Bar
+
+When active, adds menus: Weather, File, Edit, View, Window, Help
+
+## Permissions
+
+- `network`
+
+## Links
+
+- [Documentation](https://zos-apps.github.io/weather)
+- [GitHub Repository](https://github.com/zos-apps/weather)
+- [Report Issues](https://github.com/zos-apps/weather/issues)
+- [All zOS Apps](https://github.com/zos-apps)
 
 ## License
 
-MIT © Hanzo AI
+MIT © [Hanzo AI](https://hanzo.ai)
