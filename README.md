@@ -13,10 +13,27 @@ npm install github:zos-apps/weather
 ## Usage
 
 ```tsx
-import ZWeather from '@zos-apps/weather';
+import App from '@zos-apps/weather';
 
-function App() {
-  return <ZWeather />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.weather",
+    "name": "Weather",
+    "icon": "🌤️",
+    "category": "utilities",
+    "permissions": ["network"],
+    "installable": true
+  }
 }
 ```
 
